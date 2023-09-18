@@ -1,0 +1,73 @@
+* {
+    font-family: Verdana;
+    box-sizing: border-box;
+}
+
+.contenedor-general {
+    background-color: rgb(211, 232, 239);
+    color: navy;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.contenedor-doscolumnas {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+
+#formulario,
+#resultados {
+    border: 1px solid navy;
+    background-color: #eee;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    display: grid;
+    align-content: space-between;
+}
+
+label,
+input {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+
+}
+
+label{
+    font-weight: bold;
+}
+input {
+    padding: 8px;
+    border: 1px solid navy;
+    border-radius: 5px;
+}
+
+/*------------------------------------------*/
+.enviar, .borrar{
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: transform 0.3s;
+}
+.enviar {
+    background-color: green;
+}
+.borrar{
+    background-color: red;
+}
+
+.enviar:hover, .borrar:hover {
+    transform: scale(1.05);
+}
